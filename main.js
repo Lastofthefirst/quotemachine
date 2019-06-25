@@ -1,6 +1,11 @@
-const reactDom = require('react')
+
+class Hello extends React.Component {
+  render() {
+    return React.createElement('div', null, `Hello ${this.props.toWhat}`);
+  }
+}
 
 ReactDOM.render(
-    <h1>Hello, world!</h1>,
-    document.getElementById('root')
-  );
+  React.createElement(Hello, {toWhat: 'World'}, null),
+  document.getElementById('root')
+);
