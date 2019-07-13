@@ -80,7 +80,7 @@ class Quote extends React.Component {
       <p>{qsource}</p>
     </div>
     <button id="new-quote" onClick={this.getNewQuote}>This button gives a new quote</button>
-    <a target="_blank"href="twitter.com/intent/tweet"><div id="tweet-quote">Tweet</div></a>
+    <a target="_blank"href="twitter.com/intent/tweet"><div id="tweet-quote">Share via bird</div></a>
 
     </div>)
   }
